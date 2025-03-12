@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
-import './Portfolio.css';
+import React, { useState } from "react";
+import "./Portfolio.css";
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const skills = [
-    "Python", "HTML5", "CSS3", "JavaScript Básico",
-    "Flask", "Bootstrap", "PL/SQL"
+    "Python",
+    "HTML5",
+    "CSS3",
+    "JavaScript Básico",
+    "Flask",
+    "Bootstrap",
+    "PL/SQL",
   ];
 
   const experiences = [
@@ -14,20 +19,22 @@ const Portfolio = () => {
       company: "NBS Informática",
       role: "Suporte Técnico em Sietemas",
       period: "2024 - Presente",
-      description: "Como suporte técnico na NBS Informática, com experiência em PL/SQL e SQL Server, sou responsável por fornecer suporte tecnico aos clientes, garantindo a integridade e confiabilidade dos sistemas."
+      description:
+        "Como suporte técnico na NBS Informática, com experiência em PL/SQL e SQL Server, sou responsável por fornecer suporte tecnico aos clientes, garantindo a integridade e confiabilidade dos sistemas.",
     },
     {
       company: "Log Lab",
       role: "Suporte Técnico em Sietemas",
       period: "2022 - 2023",
-      description: "Na Log Lab eu relatava bugs e capacitava novos funcionários das unidades."
+      description:
+        "Na Log Lab eu relatava bugs e capacitava novos funcionários das unidades.",
     },
     {
       company: "...",
       role: "...",
       period: "... - ...",
-      description: "..."
-    }
+      description: "...",
+    },
   ];
 
   const certificates = [
@@ -35,26 +42,26 @@ const Portfolio = () => {
       title: "AWS Certified Cloud Practitioner",
       organization: "Amazon Web Services",
       date: "2024",
-      credentialId: "AWS-123456"
+      credentialId: "AWS-123456",
     },
     {
       title: "Python Professional Certification",
       organization: "Python Institute",
       date: "2023",
-      credentialId: "PY-789012"
+      credentialId: "PY-789012",
     },
     {
       title: "Full Stack Web Development",
       organization: "Digital Innovation One",
       date: "2023",
-      credentialId: "FS-345678"
+      credentialId: "FS-345678",
     },
     {
       title: "Scrum Fundamentals Certified",
       organization: "ScrumStudy",
       date: "2022",
-      credentialId: "SCR-901234"
-    }
+      credentialId: "SCR-901234",
+    },
   ];
 
   return (
@@ -62,18 +69,28 @@ const Portfolio = () => {
       {/* Header */}
       <nav className="navbar">
         <div className="container">
-          <a href="#" className="logo">GR</a>
-          <button 
+          <a href="#" className="logo">
+            GR
+          </a>
+          <button
             className="menu-button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? "✕" : "☰"}
           </button>
-          <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#experience">Experiência</a></li>
-            <li><a href="#certificates">Certificados</a></li>
-            <li><a href="#contact">Contato</a></li>
+          <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+            <li>
+              <a href="#experience">Experiência</a>
+            </li>
+            <li>
+              <a href="#certificates">Certificados</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -86,8 +103,12 @@ const Portfolio = () => {
             Desenvolvedor Full Stack apaixonado por criar soluções inovadoras
           </p>
           <div className="button-group">
-            <a href="#contact" className="button primary">Contato</a>
-            <a href="#experience" className="button secondary">Ver Experiência</a>
+            <a href="#contact" className="button primary">
+              Contato
+            </a>
+            <a href="#experience" className="button secondary">
+              Ver Experiência
+            </a>
           </div>
         </div>
       </section>
@@ -99,10 +120,11 @@ const Portfolio = () => {
           <div className="about-grid">
             <div className="about-content">
               <p>
-                Sou um desenvolvedor full stack com experiência em desenvolvimento web
-                e aplicações escaláveis. Especializado em Python, React e Node.js,
-                busco constantemente aprender novas tecnologias e metodologias para
-                criar soluções inovadoras e eficientes.
+                Sou um desenvolvedor full stack com experiência em
+                desenvolvimento web e aplicações escaláveis. Especializado em
+                Python, React e Node.js, busco constantemente aprender novas
+                tecnologias e metodologias para criar soluções inovadoras e
+                eficientes.
               </p>
               <div className="skills">
                 <h3>Habilidades Técnicas</h3>
@@ -126,7 +148,10 @@ const Portfolio = () => {
               </div>
               <div className="info-item">
                 <span className="info-icon">📚</span>
-                <span>Técnologo Em Ánalise e Desnvolvimento de Sistemas - Unic Beira Rio</span>
+                <span>
+                  Técnologo Em Ánalise e Desnvolvimento de Sistemas - Unic Beira
+                  Rio
+                </span>
               </div>
             </div>
           </div>
@@ -172,13 +197,22 @@ const Portfolio = () => {
         <div className="container">
           <h2>Contato</h2>
           <div className="social-links">
-            <a href="https://github.com" className="social-link">GitHub</a>
-            <a href="https://linkedin.com" className="social-link">LinkedIn</a>
-            <a href="mailto:gustavo@email.com" className="social-link">Email</a>
+            <a
+              href="https://github.com/gustavoz65/portfolio"
+              className="social-link"
+            >
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/feed/" className="social-link">
+              LinkedIn
+            </a>
+            <a href="mailto:gustavo@email.com" className="social-link">
+              Email
+            </a>
           </div>
           <p className="contact-text">
-            Estou sempre aberto a novas oportunidades e parcerias.
-            Vamos trabalhar juntos para criar algo incrível?
+            Estou sempre aberto a novas oportunidades e parcerias. Vamos
+            trabalhar juntos para criar algo incrível?
           </p>
         </div>
       </section>
@@ -186,7 +220,9 @@ const Portfolio = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>© 2024 Gustavo Rodrigues da Silva. Todos os direitos reservados.</p>
+          <p>
+            © 2024 Gustavo Rodrigues da Silva. Todos os direitos reservados.
+          </p>
         </div>
       </footer>
     </div>

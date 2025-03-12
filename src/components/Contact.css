@@ -1,0 +1,25 @@
+.contact {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  color: var(--secondary-text);
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+}
+
+.contact-text {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--secondary-text);
+}
